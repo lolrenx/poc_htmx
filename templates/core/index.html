@@ -1,0 +1,15 @@
+{% extends "core/base.html"  %}
+
+{% block content %}
+    <header>
+        <h1 id="title">
+            hello
+        </h1>
+    </header>
+
+    <span
+    hx-get="{% url 'index' %}"
+    hx-target="this"
+    hx-swap="outerHTML">
+    </span>
+{% endblock %}

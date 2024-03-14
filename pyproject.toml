@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "poc-front"
+version = "0.1.0"
+description = "poc front django htmx"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Django = "^5.0.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+pytest-django = "^4.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
