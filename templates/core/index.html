@@ -3,11 +3,17 @@
 {% block content %}
     <header>
         <h1 id="title">
-            hello
+            Pokedex
         </h1>
     </header>
 
-    {{data.name}}
+    <ul style="display: grid; grid-template-columns: repeat(3, 1fr);">
+    {% for pokemon in data %}
+        <li>
+        {{ pokemon.name }} 
+        </li>
+    {% endfor %}
+    </ul>
 
     <span
     hx-get="{% url 'index' %}"
